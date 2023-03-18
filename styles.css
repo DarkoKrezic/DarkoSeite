@@ -1,34 +1,79 @@
 * {
   box-sizing: border-box;
-  padding: 10x;
-  margin: 5px;
+  padding: 0px;
+  margin: 0px;
   scroll-behavior: smooth;
-}
-body {
   font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
     Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  list-style: none;
+}
+body {
   background-color: rgb(0, 0, 0);
 
   color: #fdfcfc;
 }
-
-img {
+.header {
   width: 100%;
-  height: auto;
+  height: 40px;
+  position: fixed;
+
+  background-color: black;
+  /*margin-left: auto;
+  margin-right: auto;*/
+  box-shadow: 0px 20px 20px black;
 }
-nav ul {
+
+.header__nav__liste {
   display: flex;
   flex-direction: row;
   justify-content: space-evenly;
   flex-wrap: wrap;
 }
-li {
-  list-style: none;
+.main {
+  padding: 100px 15px 0px 15px;
 }
+.main__article__headline {
+  display: flex;
+  flex-direction: row;
+}
+img {
+  max-width: 400px;
+  height: auto;
+}
+
 a {
   text-decoration: none;
   color: #ddb8b8;
 }
-h1 {
+.main__span {
   font-size: 80px;
+  font-weight: 800;
+  width: 40%;
+}
+.contact {
+  display: flex;
+
+  align-items: center;
+  padding: 15px 0px;
+}
+.contact__h2 {
+  writing-mode: vertical-rl;
+  padding: 0px 25px;
+}
+.contact__liste {
+  display: flex;
+  flex-direction: column;
+}
+.skillset {
+  display: flex;
+}
+.skillset__liste {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+.skillset__h2 {
+  writing-mode: vertical-rl;
+  padding: 0px 25px;
 }

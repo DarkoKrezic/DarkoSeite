@@ -7,43 +7,46 @@
     <title>Document</title>
     <link rel="stylesheet" href="styles.css" />
   </head>
+  <header class="header">
+    <nav class="header__nav" id="nav">
+      <ul class="header__nav__liste">
+        <li><a href="#contact">Contact</a></li>
+        <li><a href="#skills">Skillset</a></li>
+        <li><a href="#about-me">About me</a></li>
+      </ul>
+    </nav>
+  </header>
   <body>
-    <header>
-      <nav class="navigation" id="nav">
-        <ul>
-          <li><a href="#contact">Contact</a></li>
-          <li><a href="#skills">Skillset</a></li>
-          <li><a href="#about-me">About me</a></li>
-        </ul>
-      </nav>
+    <main class="main">
       <p>Hi there! I am</p>
-      <h1>Darko.</h1>
-    </header>
-    <main>
-      <article id="about-me">
-        <p>
-          I am an WebDev Student at Neue Fische. Soon u can hire me to help
-          build your page but u can contact me already.
-        </p>
+      <article class="main__article_headline">
+        <span class="main__span">Darko.</span>
         <figure>
           <img
             src="https://profile-images.xing.com/images/5246bca13d5ca41124db42c69e6a89cd-1/darko-krezic.1024x1024.jpg"
             alt="darkos picture"
           />
-          <figcaption>A pic of me.</figcaption>
         </figure>
       </article>
+      <article id="about-me">
+        <p>
+          I am an WebDev Student at Neue Fische. Soon u can hire me to help
+          build your page but u can contact me already.
+        </p>
+      </article>
 
-      <section id="contact">
-        <h2>Contact</h2>
-        <a href="https://github.com/DarkoKrezic">GitHub</a>
-        <a href="https://de.linkedin.com/">LinkedIn</a>
-        <a href="https://codesandbox.io/u/DarkoKrezic">CodeSandbox</a>
+      <section class="contact" id="contact">
+        <h2 class="contact__h2">Contact</h2>
+        <ul class="contact__liste">
+          <a href="https://github.com/DarkoKrezic">GitHub</a>
+          <a href="https://de.linkedin.com/">LinkedIn</a>
+          <a href="https://codesandbox.io/u/DarkoKrezic">CodeSandbox</a>
+        </ul>
       </section>
 
-      <section id="skills">
-        <h2>Skillset</h2>
-        <ul class="Skillset">
+      <section class="skillset" id="skills">
+        <h2 class="skillset__h2">Skillset</h2>
+        <ul class="skillset__liste">
           <li>HTML</li>
           <li>CSS</li>
           <li>JavaScript</li>
