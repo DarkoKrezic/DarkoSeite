@@ -7,47 +7,60 @@
     <title>Document</title>
     <link rel="stylesheet" href="styles.css" />
   </head>
+  <header class="header">
+    <nav class="header__nav" id="nav">
+      <ul class="header__nav__liste">
+        <li><a href="#contact">Contact</a></li>
+        <li><a href="#skills">Skillset</a></li>
+        <li><a href="#about-me">About me</a></li>
+      </ul>
+    </nav>
+  </header>
   <body>
-    <header>
-      <nav class="navigation" id="nav">
-        <ul>
-          <li><a href="#contact">Contact</a></li>
-          <li><a href="#skills">Skillset</a></li>
-          <li><a href="#about-me">About me</a></li>
-        </ul>
-      </nav>
-      <p>Hi there! I am</p>
-      <h1>Darko.</h1>
-    </header>
-    <main>
-      <article id="about-me">
+    <main class="main">
+      <article class="main__article_headline">
+        <div class="main__textbox">
+          <span class="hithere">Hi there! I am</span>
+          <span class="main__span">Darko.</span>
+        </div>
+        <span>
+          <img
+            class="main__pic"
+            src="https://profile-images.xing.com/images/5246bca13d5ca41124db42c69e6a89cd-1/darko-krezic.1024x1024.jpg"
+            alt="darkos picture"
+          />
+        </span>
+      </article>
+      <article class="aboutMe" id="about-me">
         <p>
           I am an WebDev Student at Neue Fische. Soon u can hire me to help
           build your page, but u can contact me already.
         </p>
-        <figure>
-          <img
-            src="https://profile-images.xing.com/images/5246bca13d5ca41124db42c69e6a89cd-1/darko-krezic.1024x1024.jpg"
-            alt="darkos picture"
-          />
-          <figcaption>A pic of me.</figcaption>
-        </figure>
       </article>
 
-      <section id="contact">
-        <h2>Contact</h2>
-        <a href="https://github.com/DarkoKrezic">GitHub</a>
-        <a href="https://de.linkedin.com/">LinkedIn</a>
-        <a href="https://codesandbox.io/u/DarkoKrezic">CodeSandbox</a>
+      <section class="contact" id="contact">
+        <h2 class="contact__h2">Contact</h2>
+        <ul class="contact__liste">
+          <a href="https://github.com/DarkoKrezic">GitHub</a>
+          <a href="https://de.linkedin.com/">LinkedIn</a>
+          <a href="https://codesandbox.io/u/DarkoKrezic">CodeSandbox</a>
+        </ul>
       </section>
 
-      <section id="skills">
-        <h2>Skillset</h2>
-        <ul class="Skillset">
-          <li>HTML</li>
-          <li>CSS</li>
-          <li>JavaScript</li>
-          <li>React</li>
+      <section class="skillset" id="skills">
+        <h2 class="skillset__h2">Skillset</h2>
+        <ul class="skillset__liste">
+          <li>
+            <img src="./pics/HTML5_logo_and_wordmark.svg.png" alt="HTML" />
+          </li>
+          <li><img src="./pics/CSS3_logo_and_wordmark.svg.png" alt="CSS" /></li>
+          <li>
+            <img
+              src="./pics/1200px-Javascript_badge.svg.png"
+              alt="JavaScript"
+            />
+          </li>
+          <li><img src="./pics/React-icon.svg.png" alt="React" /></li>
         </ul>
       </section>
     </main>
