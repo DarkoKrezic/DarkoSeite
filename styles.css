@@ -6,6 +6,7 @@
   font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
     Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
   list-style: none;
+  max-width: 800px;
 }
 body {
   background-color: rgb(0, 0, 0);
@@ -18,8 +19,6 @@ body {
   position: fixed;
 
   background-color: black;
-  /*margin-left: auto;
-  margin-right: auto;*/
   box-shadow: 0px 20px 20px black;
 }
 
@@ -30,13 +29,13 @@ body {
   flex-wrap: wrap;
 }
 .main {
-  padding: 100px 15px 0px 15px;
+  padding: 100px 30px 0px 15px;
 }
 .main__article__headline {
-  display: flex;
+  display: flex flex;
   flex-direction: row;
 }
-img {
+.main__pic {
   max-width: 400px;
   height: auto;
 }
@@ -45,10 +44,13 @@ a {
   text-decoration: none;
   color: #ddb8b8;
 }
+.main__textbox {
+  display: flex;
+  flex-direction: column;
+}
 .main__span {
   font-size: 80px;
   font-weight: 800;
-  width: 40%;
 }
 .contact {
   display: flex;
@@ -66,6 +68,7 @@ a {
 }
 .skillset {
   display: flex;
+  margin-bottom: 30px;
 }
 .skillset__liste {
   width: 100%;
@@ -76,4 +79,10 @@ a {
 .skillset__h2 {
   writing-mode: vertical-rl;
   padding: 0px 25px;
+}
+.skillset img {
+  max-height: 50px;
+}
+.aboutMe {
+  padding: 20px 0px;
 }
